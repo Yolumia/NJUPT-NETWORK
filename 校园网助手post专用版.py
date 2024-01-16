@@ -9,7 +9,7 @@ import socket
 from os import path
 
 
-# 第一步，通过http://p.njupt.edu.cn/的返回res得到ip
+# 通过http://p.njupt.edu.cn/的返回res得到ip
 def getIP():
     url = "http://p.njupt.edu.cn/"
     res = requests.get(url=url)
@@ -19,9 +19,7 @@ def getIP():
 
 def login(url):
     ip = getIP()
-
     requests.post(url=url)
-
     return True
 
 
@@ -32,24 +30,23 @@ def read_user_inf():
     return url
 
 
-def isNetOK(testserver):
-    s = socket.socket()
-    s.settimeout(3)
-    try:
-        status = s.connect_ex(testserver)
-        if status == 0:
-            s.close()
-            return True
-        else:
-            return False
-    except Exception as e:
-        return False
+# def isNetOK(testserver):
+#     s = socket.socket()
+#     s.settimeout(3)
+#     try:
+#         status = s.connect_ex(testserver)
+#         if status == 0:
+#             s.close()
+#             return True
+#         else:
+#             return False
+#     except Exception as e:
+#         return False
 
-
+#通过访问百度，检查网络是否连上了
 def isConnected():
     q = ('www.baidu.com', 443)
     return isNetOK(q)
-
 
 if __name__ == "__main__":
 
@@ -68,9 +65,8 @@ if __name__ == "__main__":
             now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
             print("现在时间：" + now)
             print("IP：" + ip)
-
             login(url)
-            time.sleep(10)
+            time.sleep(10)#休眠10秒
         except:
             pass
         time.sleep(30)
