@@ -68,5 +68,6 @@ if __name__ == "__main__":
             login(url)
             time.sleep(10)#休眠10秒
         except:
+            print("登录失败")
             pass
         time.sleep(30)
