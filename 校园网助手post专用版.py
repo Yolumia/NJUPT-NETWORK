@@ -51,9 +51,9 @@ def isConnected():
 if __name__ == "__main__":
 
     print("南京邮电大学校园网登录助手脚本V24.1.16")
-    print("更新日志：2024年1月16日，post专用版本")
+    print("更新日志：2024年1月16日，抓包专用版本")
     print("")
-    print("作者：张家宾，特别感谢：张乔楚")
+    print("作者：张家宾（B站：技术宅学长），特别感谢：张乔楚")
     print("交流群：873779462")
     
     url = read_user_inf()#从url.txt文件读取url
