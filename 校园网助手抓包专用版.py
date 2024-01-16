@@ -56,9 +56,12 @@ if __name__ == "__main__":
     print("作者：张家宾（B站：技术宅学长），特别感谢：张乔楚")
     print("交流群：873779462")
     
-    url = read_user_inf()#从url.txt文件读取url
+    try:
+        url = read_user_inf()#从url.txt文件读取url，需要自行创建该文件
+    except:
+        print("从url.txt文件读取url出错，需要自行创建该文件，并填入抓取的url")
     #或者直接写url="你抓包的url"
-
+    #url=""
     while True:
         try:
             ip = getIP()
