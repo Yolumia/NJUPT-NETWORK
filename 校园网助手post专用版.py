@@ -17,9 +17,11 @@ def getIP():
     ip = re.search("v46ip=\'([^\']*)\'", res.text).group(1)
     return ip
 
+def login(url):
     ip = getIP()
 
     requests.post(url=url)
+
     return True
 
 
@@ -27,7 +29,6 @@ def read_user_inf():
     with open('url.txt', encoding='utf-8') as file_obj:
         url = file_obj.read()
         print("读取url成功：" + url.rstrip())
-
     return url
 
 
@@ -57,7 +58,9 @@ if __name__ == "__main__":
     print("")
     print("作者：张家宾，特别感谢：张乔楚")
     print("交流群：873779462")
-    url = read_user_inf()
+    
+    url = read_user_inf()#从url.txt文件读取url
+    #或者直接写url="你抓包的url"
 
     while True:
         try:
