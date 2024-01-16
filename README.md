@@ -15,7 +15,7 @@ https://www.icloud.com/shortcuts/25899396dfcb4a3eb9b4bfb548f955ec
 chinanet电信
 https://www.icloud.com/shortcuts/fa580752fa7944b0aed91255b958a7a1
 南邮 win/安卓/Linux
-百度网盘： 链接：https://pan.baidu.com/s/10o1UwlW4rXfzLgSR9uek0g?pwd=6666 提取码：6666 win请使用post版本，使用方法请看我的专栏 https://www.bilibili.com/read/cv25574996/?spm_id_from=333.999.0.0
+百度网盘： 链接：https://pan.baidu.com/s/10o1UwlW4rXfzLgSR9uek0g?pwd=6666 提取码：6666 win请使用抓包版本，使用方法请看我的专栏 https://www.bilibili.com/read/cv25574996/?spm_id_from=333.999.0.0
 请关闭数据连接，连上wifi后使用。
 南京工业大学
 南工大 iOS/iPad OS/Mac OS快捷指令
